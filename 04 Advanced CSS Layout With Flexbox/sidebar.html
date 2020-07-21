@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        margin: 0;
+        background: #ecf0f1;
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 15vw;
+        border-right: 1px solid #d7dbdd;
+        font-family: sans-serif;
+        background: #34495e;
+      }
+
+      .item {
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+      }
+
+      .section {
+        padding: 10px;
+      }
+    </style>
+
+    <title>Flexbox Sidebar</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- This section should be at the top-->
+      <div class="section">
+        <div class="item">Messages</div>
+        <div class="item">Friends</div>
+        <div class="item">User Profile</div>
+      </div>
+      <!-- This section should be at the bottom -->
+      <div class="section">
+        <div class="item">Settings</div>
+        <div class="item">Questions?</div>
+      </div>
+    </div>
+  </body>
+</html>
