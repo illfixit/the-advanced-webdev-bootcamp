@@ -18,7 +18,7 @@ class AuthForm extends Component {
     this.props
       .onAuth(authType, this.state)
       .then(() => {
-        console.log("LOGGED IN!");
+        this.props.history.push("/");
       })
       .catch(() => {
         return;
@@ -110,5 +110,14 @@ class AuthForm extends Component {
     );
   }
 }
+AuthForm.propTypes = {
+  buttonText: PropTypes.string,
+  errors: PropTypes.object,
+  heading: PropTypes.string,
+  history: PropTypes.object,
+  onAuth: PropTypes.func,
+  signIn: PropTypes.bool,
+  removeError: PropTypes.func
+};
 
 export default AuthForm;
